@@ -1,0 +1,11 @@
+﻿html, body { font-family: 微软雅黑, Verdana; }
+/*滚动条
+::-webkit-scrollbar { background: #eee; width: 2px; height: 2px; }
+::-webkit-scrollbar-track { background: #eee; }
+::-webkit-scrollbar-thumb { border: solid 1px #bbb; background: #bbb; }
+::-webkit-scrollbar-thumb:window-inactive { background: #bbb; }
+::-webkit-scrollbar-thumb:vertical:hover { background-color: #bbb; }
+::-webkit-scrollbar-thumb:vertical:active { background-color: #bbb; }
+::-webkit-scrollbar-thumb:horizontal:hover { background-color: #bbb; }
+::-webkit-scrollbar-thumb:horizontal:active { background-color: #bbb; }
+*/

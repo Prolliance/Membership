@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TpNet</name>
+    </assembly>
+    <members>
+        <member name="T:TpNet.JsEngine.Context">
+            <summary>
+            脚本执行上下文
+            </summary>
+        </member>
+        <member name="M:TpNet.JsEngine.Context.#ctor">
+            <summary>
+            构造一个新一执行上下文对象
+            </summary>
+        </member>
+        <member name="M:TpNet.JsEngine.Context.SetParameter(System.String,System.Object)">
+            <summary>
+            向上下文中添加一个对象变量
+            </summary>
+            <param name="name">变量</param>
+            <param name="_object">对象</param>
+        </member>
+        <member name="M:TpNet.JsEngine.Context.GetParameter(System.String)">
+            <summary>
+            从上下文件中获取一个参数变量
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TpNet.JsEngine.Context.SetParameterWithType(System.String,System.Type)">
+            <summary>
+            向上下文中添加一个类型变量
+            </summary>
+            <param name="name">变量</param>
+            <param name="type">类型</param>
+        </member>
+        <member name="M:TpNet.JsEngine.Context.SetParameterWithType(System.String,System.String)">
+            <summary>
+            向上下文中添加一个类型变量
+            </summary>
+            <param name="name">变量</param>
+            <param name="typeName">类型名称</param>
+        </member>
+        <member name="M:TpNet.JsEngine.Context.Execute(System.String)">
+            <summary>
+            执行一段脚本
+            </summary>
+            <param name="script"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TpNet.JsEngine.Context.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="T:TpNet.JsEngine.NativeJS">
+            <summary>
+            Native 扩展类型 
+            </summary>
+        </member>
+        <member name="M:TpNet.JsEngine.NativeJS.#ctor">
+            <summary>
+            构造一个 NativeJs
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:TpNet.Option.#ctor(System.String,System.String,System.Type)">
+            <summary>
+            构造选项
+            </summary>
+            <param name="codeBegin">代码块开始标记</param>
+            <param name="codeEnd">代码块结束标记</param>
+            <param name="extend">编译或角析时扩展模板方法</param>
+        </member>
+        <member name="M:TpNet.Option.#ctor(System.String,System.String)">
+            <summary>
+            构造选项
+            </summary>
+            <param name="codeBegin">代码块开始标记</param>
+            <param name="codeEnd">代码块结束标记</param>
+        </member>
+        <member name="M:TpNet.Option.#ctor(System.Type)">
+            <summary>
+            构造选项
+            </summary>
+            <param name="extend">编译或角析时扩展模板方法</param>
+        </member>
+        <member name="P:TpNet.Option.CodeBegin">
+            <summary>
+            代码块开始标记
+            </summary>
+        </member>
+        <member name="P:TpNet.Option.CodeEnd">
+            <summary>
+            代码块结束标记
+            </summary>
+        </member>
+        <member name="P:TpNet.Option.Extend">
+            <summary>
+            编译或角析时扩展模板方法
+            </summary>
+        </member>
+        <member name="T:TpNet.Tp">
+            <summary>
+            Tp 模板引擎 .NET 版
+            基于 Tp 模板引擎 JavaScript 版的 v3.2
+            </summary>
+        </member>
+        <member name="M:TpNet.Tp.#cctor">
+            <summary>
+            静态构造
+            </summary>
+        </member>
+        <member name="M:TpNet.Tp.CreateVariableName">
+            <summary>
+            产生一个 GUID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TpNet.Tp.#ctor(System.String)">
+            <summary>
+            构造一个编译后模板对象
+            </summary>
+            <param name="functionName">js 函数名</param>
+        </member>
+        <member name="M:TpNet.Tp.Execute(System.Object,System.Type)">
+            <summary>
+            执行编译后的模板
+            </summary>
+            <param name="model">模型数据对象</param>
+            <param name="extend">执行时扩展模板方法</param>
+            <returns>模板执行结果</returns>
+        </member>
+        <member name="M:TpNet.Tp.Execute(System.Object)">
+            <summary>
+            执行编译后的模板
+            </summary>
+            <param name="model">模型数据对象</param>
+            <returns>模板执行结果</returns>
+        </member>
+        <member name="M:TpNet.Tp.Extend(System.Type)">
+            <summary>
+            全局扩展模板方法
+            </summary>
+            <param name="extObject">扩展方法所属对象</param>
+        </member>
+        <member name="M:TpNet.Tp.Compile(System.String,TpNet.Option)">
+            <summary>
+            编译一个模板
+            </summary>
+            <param name="source">模板源</param>
+            <param name="option">编译选项</param>
+            <returns>编译后的模板对象</returns>
+        </member>
+        <member name="M:TpNet.Tp.Compile(System.String)">
+            <summary>
+            编译一个模板
+            </summary>
+            <param name="source">模板源</param>
+            <returns></returns>
+        </member>
+        <member name="M:TpNet.Tp.Parse(System.String,System.Object,TpNet.Option,System.Type)">
+            <summary>
+            解析一个模板
+            </summary>
+            <param name="source">模板源</param>
+            <param name="model">模型数据对象</param>
+            <param name="option">解析选项</param>
+            <param name="extend">执行时扩展模板方法</param>
+            <returns>模板执行结果</returns>
+        </member>
+        <member name="M:TpNet.Tp.Parse(System.String,System.Object,TpNet.Option)">
+            <summary>
+            解析一个模板
+            </summary>
+            <param name="source">模板源</param>
+            <param name="model">模型数据对象</param>
+            <param name="option">解析选项</param>
+            <returns>模板执行结果</returns>
+        </member>
+        <member name="M:TpNet.Tp.Parse(System.String,System.Object)">
+            <summary>
+            解析一个模板
+            </summary>
+            <param name="source">模板源</param>
+            <param name="model">模型数据对象</param>
+            <returns>模板执行结果</returns>
+        </member>
+        <member name="P:TpNet.Tp.ScriptContext">
+            <summary>
+            使用的脚本引擎
+            </summary>
+        </member>
+        <member name="P:TpNet.Tp.FunctionName">
+            <summary>
+            对应的 js 函数名
+            </summary>
+        </member>
+        <member name="P:TpNet.Tp.CodeBegin">
+            <summary>
+            代码块开始标记
+            </summary>
+        </member>
+        <member name="P:TpNet.Tp.CodeEnd">
+            <summary>
+            代码块结束标记
+            </summary>
+        </member>
+        <member name="T:TpNet.Utils">
+            <summary>
+            辅助工具类
+            </summary>
+        </member>
+        <member name="M:TpNet.Utils.ReadAllTextFromRes(System.String)">
+            <summary>
+            从嵌入资源中读取文本
+            </summary>
+            <param name="fullName"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

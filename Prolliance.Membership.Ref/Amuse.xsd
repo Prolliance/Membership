@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Amuse"
+    targetNamespace="http://houfeng.net/Amuse.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://houfeng.net/Amuse.xsd"
+    xmlns:mstns="http://houfeng.net/Amuse.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="beans">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="bean" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:choice  minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="property">
+                <xs:complexType mixed="true">
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                  <xs:attribute name="ref" type="xs:string"/>
+                  <xs:attribute name="type" type="xs:string"/>
+                  <xs:attribute name="trim" type="trimType"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="method">
+                <xs:complexType mixed="true">
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="parameter">
+                      <xs:complexType mixed="true">
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                        <xs:attribute name="ref" type="xs:string"/>
+                        <xs:attribute name="type" type="xs:string"/>
+                        <xs:attribute name="trim" type="trimType"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="constructor">
+                <xs:complexType mixed="true">
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="parameter">
+                      <xs:complexType mixed="true">
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                        <xs:attribute name="ref" type="xs:string"/>
+                        <xs:attribute name="type" type="xs:string"/>
+                        <xs:attribute name="trim" type="trimType"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+            <xs:attribute name="factory-method" type="xs:string"/>
+            <xs:attribute name="mode" type="modeType"/>
+            <xs:attribute name="group" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--实例模式类型-->
+  <xs:simpleType name="modeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="singleton"/>
+      <xs:enumeration value="multiton"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--字符修剪类型-->
+  <xs:simpleType name="trimType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="normal"/>
+      <xs:enumeration value="both"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

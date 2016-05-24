@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE5AC7FC-1699-434D-9699-25A9E80944D1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prolliance.Membership.ServicePoint</RootNamespace>
+    <AssemblyName>Prolliance.Membership.ServicePoint</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxEngine, Version=2.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Prolliance.Membership.Ref\AjaxEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="dotless.Core, Version=1.3.1.0, Culture=neutral, PublicKeyToken=96b446c9e63eae34, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Prolliance.Membership.Ref\dotless.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="auth.aspx" />
+    <Content Include="mgr\static\table.js" />
+    <Content Include="mgr\views\Controls\Pager.ascx" />
+    <Content Include="mgr\views\extensioninfo.aspx" />
+    <Content Include="mgr\views\extension-detail.aspx" />
+    <Content Include="mgr\views\position-report-to.aspx" />
+    <Content Include="mgr\views\user-photo-upload.aspx" />
+    <Content Include="static\common.css" />
+    <Content Include="static\defaultuser.jpg" />
+    <Content Include="static\dialog.js" />
+    <Content Include="unauth.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="install\index.aspx" />
+    <Content Include="install\step\agreement.ascx" />
+    <Content Include="install\step\data-repo.ascx" />
+    <Content Include="install\step\init-data.ascx" />
+    <Content Include="install\step\passport.ascx" />
+    <Content Include="install\step\account.ascx" />
+    <Content Include="install\step\done.ascx" />
+    <Content Include="jsapi\api.js" />
+    <Content Include="jsapi\css\images\animated-overlay.gif" />
+    <Content Include="jsapi\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="jsapi\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="jsapi\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="jsapi\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jsapi\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="jsapi\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="jsapi\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jsapi\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="jsapi\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="jsapi\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jsapi\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="jsapi\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="jsapi\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jsapi\css\jqueryui.css" />
+    <Content Include="jsapi\css\style.css" />
+    <Content Include="jsapi\lib\ems.js" />
+    <Content Include="jsapi\lib\grid.js" />
+    <Content Include="jsapi\lib\jquery.js" />
+    <Content Include="jsapi\lib\jqueryui.js" />
+    <Content Include="jsapi\lib\linq.js" />
+    <Content Include="jsapi\lib\tp.js" />
+    <Content Include="jsapi\lib\utils.js" />
+    <Content Include="jsapi\service.js" />
+    <Content Include="jsapi\tpl\dialog-org.html" />
+    <Content Include="jsapi\tpl\dialog-user.html" />
+    <Content Include="jsapi\ui.js" />
+    <Content Include="mgr\dev\index.aspx" />
+    <Content Include="mgr\static\view.css" />
+    <Content Include="mgr\index.aspx" />
+    <Content Include="mgr\login.aspx" />
+    <Content Include="mgr\dev\expr.aspx" />
+    <Content Include="mgr\views\app-manifest.aspx" />
+    <Content Include="mgr\views\role-operation.aspx" />
+    <Content Include="mgr\views\role-give.aspx" />
+    <Content Include="mgr\views\user-add-exist.aspx" />
+    <Content Include="mgr\views\user-password.aspx" />
+    <Content Include="mgr\views\user-detail.aspx" />
+    <Content Include="mgr\views\position-detail.aspx" />
+    <Content Include="mgr\views\org-detail.aspx" />
+    <Content Include="mgr\views\user-list.aspx" />
+    <Content Include="mgr\views\position-list.aspx" />
+    <Content Include="mgr\views\org-list.aspx" />
+    <Content Include="mgr\views\Controls\OrgTree.ascx" />
+    <Content Include="mgr\views\role-detail.aspx" />
+    <Content Include="mgr\views\role-list.aspx" />
+    <Content Include="mgr\views\app-list.aspx" />
+    <Content Include="mgr\views\app-detail.aspx" />
+    <Content Include="service\index.aspx" />
+    <Content Include="static\jquery-linedtextarea\jquery-linedtextarea-license.txt" />
+    <Content Include="static\jquery-linedtextarea\jquery-linedtextarea.css" />
+    <Content Include="static\jquery-linedtextarea\jquery-linedtextarea.html" />
+    <Content Include="static\jquery-linedtextarea\jquery-linedtextarea.js" />
+    <Content Include="static\ems.js" />
+    <Content Include="static\grid.js" />
+    <Content Include="static\jqueryui\js\jqueryui-wraper.js" />
+    <Content Include="static\jquery.xhashchange.js" />
+    <Content Include="static\jquery.js" />
+    <Content Include="static\jqueryui\js\jqueryui.js" />
+    <Content Include="static\linq.js" />
+    <Content Include="static\tp.js" />
+    <Content Include="static\tree.js" />
+    <Content Include="static\utils.js" />
+    <Content Include="static\jqueryui\css\images\animated-overlay.gif" />
+    <Content Include="static\jqueryui\css\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="static\jqueryui\css\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="static\jqueryui\css\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="static\jqueryui\css\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="static\jqueryui\css\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="static\jqueryui\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="static\jqueryui\css\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="static\jqueryui\css\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="static\jqueryui\css\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="static\jqueryui\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="static\jqueryui\css\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="static\jqueryui\css\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="static\jqueryui\css\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="static\jqueryui\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="static\jqueryui\css\jquery-ui.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="auth.aspx.cs">
+      <DependentUpon>auth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="auth.aspx.designer.cs">
+      <DependentUpon>auth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\Controls\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\Controls\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\extensioninfo.aspx.cs">
+      <DependentUpon>extensioninfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\extensioninfo.aspx.designer.cs">
+      <DependentUpon>extensioninfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\extension-detail.aspx.cs">
+      <DependentUpon>extension-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\extension-detail.aspx.designer.cs">
+      <DependentUpon>extension-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\position-report-to.aspx.cs">
+      <DependentUpon>position-report-to.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\position-report-to.aspx.designer.cs">
+      <DependentUpon>position-report-to.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\user-photo-upload.aspx.cs">
+      <DependentUpon>user-photo-upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\user-photo-upload.aspx.designer.cs">
+      <DependentUpon>user-photo-upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="service\app.ashx.cs">
+      <DependentUpon>app.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="service\cache.ashx.cs">
+      <DependentUpon>cache.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="service\organization.ashx.cs">
+      <DependentUpon>organization.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="service\role.ashx.cs">
+      <DependentUpon>role.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="service\position.ashx.cs">
+      <DependentUpon>position.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="unauth.aspx.cs">
+      <DependentUpon>unauth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="unauth.aspx.designer.cs">
+      <DependentUpon>unauth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="install\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="install\step\agreement.ascx.cs">
+      <DependentUpon>agreement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\step\agreement.ascx.designer.cs">
+      <DependentUpon>agreement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="install\step\data-repo.ascx.cs">
+      <DependentUpon>data-repo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\step\data-repo.ascx.designer.cs">
+      <DependentUpon>data-repo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="install\step\init-data.ascx.cs">
+      <DependentUpon>init-data.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\step\init-data.ascx.designer.cs">
+      <DependentUpon>init-data.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="install\step\passport.ascx.cs">
+      <DependentUpon>passport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\step\passport.ascx.designer.cs">
+      <DependentUpon>passport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="install\step\account.ascx.cs">
+      <DependentUpon>account.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\step\account.ascx.designer.cs">
+      <DependentUpon>account.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="install\step\done.ascx.cs">
+      <DependentUpon>done.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\step\done.ascx.designer.cs">
+      <DependentUpon>done.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="jsapi\tpl\agent.ashx.cs">
+      <DependentUpon>agent.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\dev\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\dev\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\dev\expr.aspx.cs">
+      <DependentUpon>expr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\dev\expr.aspx.designer.cs">
+      <DependentUpon>expr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\app-manifest.aspx.cs">
+      <DependentUpon>app-manifest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\app-manifest.aspx.designer.cs">
+      <DependentUpon>app-manifest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\role-operation.aspx.cs">
+      <DependentUpon>role-operation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\role-operation.aspx.designer.cs">
+      <DependentUpon>role-operation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\role-give.aspx.cs">
+      <DependentUpon>role-give.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\role-give.aspx.designer.cs">
+      <DependentUpon>role-give.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\user-add-exist.aspx.cs">
+      <DependentUpon>user-add-exist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\user-add-exist.aspx.designer.cs">
+      <DependentUpon>user-add-exist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\user-password.aspx.cs">
+      <DependentUpon>user-password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\user-password.aspx.designer.cs">
+      <DependentUpon>user-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\user-detail.aspx.cs">
+      <DependentUpon>user-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\user-detail.aspx.designer.cs">
+      <DependentUpon>user-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\position-detail.aspx.cs">
+      <DependentUpon>position-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\position-detail.aspx.designer.cs">
+      <DependentUpon>position-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\org-detail.aspx.cs">
+      <DependentUpon>org-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\org-detail.aspx.designer.cs">
+      <DependentUpon>org-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\user-list.aspx.cs">
+      <DependentUpon>user-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\user-list.aspx.designer.cs">
+      <DependentUpon>user-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\position-list.aspx.cs">
+      <DependentUpon>position-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\position-list.aspx.designer.cs">
+      <DependentUpon>position-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\org-list.aspx.cs">
+      <DependentUpon>org-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\org-list.aspx.designer.cs">
+      <DependentUpon>org-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\Controls\OrgTree.ascx.cs">
+      <DependentUpon>OrgTree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\Controls\OrgTree.ascx.designer.cs">
+      <DependentUpon>OrgTree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\role-detail.aspx.cs">
+      <DependentUpon>role-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\role-detail.aspx.designer.cs">
+      <DependentUpon>role-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\role-list.aspx.cs">
+      <DependentUpon>role-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\role-list.aspx.designer.cs">
+      <DependentUpon>role-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\app-list.aspx.cs">
+      <DependentUpon>app-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\app-list.aspx.designer.cs">
+      <DependentUpon>app-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mgr\views\app-detail.aspx.cs">
+      <DependentUpon>app-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mgr\views\app-detail.aspx.designer.cs">
+      <DependentUpon>app-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="service\user.ashx.cs">
+      <DependentUpon>user.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="service\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="service\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="service\user.ashx" />
+    <Content Include="static\jquery-linedtextarea\README.md" />
+    <Content Include="jsapi\css\images\Thumbs.db" />
+    <Content Include="jsapi\tpl\agent.ashx" />
+    <Content Include="service\app.ashx" />
+    <Content Include="service\position.ashx" />
+    <Content Include="service\organization.ashx" />
+    <Content Include="ProMembership.pfx" />
+    <None Include="Properties\PublishProfiles\LocalFileSystemDeploy.pubxml" />
+    <None Include="Properties\PublishProfiles\RemoteFileSystemDeploy.pubxml" />
+    <Content Include="service\role.ashx" />
+    <Content Include="service\cache.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prolliance.Membership.Business\Membership.Business.csproj">
+      <Project>{fc497b9e-429b-4f27-adad-d7ec425de1bb}</Project>
+      <Name>Membership.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.Common\Membership.Common.csproj">
+      <Project>{2109fd12-e92d-4e94-a170-6afe3aafe2ec}</Project>
+      <Name>Membership.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.DataPersistence\Membership.DataPersistence.csproj">
+      <Project>{F8F9B0D9-23EA-48B1-A201-CBA71755BC69}</Project>
+      <Name>Membership.DataPersistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.DataProvider.MongoDB\Membership.DataProvider.MongoDB.csproj">
+      <Project>{9df5b683-8ba8-4a3f-91ea-758c3277bb75}</Project>
+      <Name>Membership.DataProvider.MongoDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.DataProvider.SQLServer\Membership.DataProvider.SQLServer.csproj">
+      <Project>{19b58c48-bd8c-43f1-890e-450914192322}</Project>
+      <Name>Membership.DataProvider.SQLServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.DataTransfer\Membership.DataTransfer.csproj">
+      <Project>{5a8d3805-9a56-4e24-a339-2fb3e371e53c}</Project>
+      <Name>Membership.DataTransfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.Install.Lib\Membership.Install.Lib.csproj">
+      <Project>{37f1d7c8-3291-45a7-958f-85f1f0148ec9}</Project>
+      <Name>Membership.Install.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.Passport.Database\Membership.Passport.Database.csproj">
+      <Project>{7d50516b-804d-4fa2-a5d7-b0b054dd066e}</Project>
+      <Name>Membership.Passport.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.Passport.DC\Membership.Passport.DC.csproj">
+      <Project>{f566f4a4-22b2-47a2-a76a-f1f21cff011f}</Project>
+      <Name>Membership.Passport.DC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.ServiceClients\Membership.ServiceClients.csproj">
+      <Project>{5e867335-fc55-4d77-b91f-c3efc722a8f6}</Project>
+      <Name>Membership.ServiceClients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.ServicePoint.Lib\Membership.ServicePoint.Lib.csproj">
+      <Project>{feea1d8d-3a10-47ca-ac67-737daeeb81f5}</Project>
+      <Name>Membership.ServicePoint.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="files\" />
+    <Folder Include="logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Distribution|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DISTRIBUTION</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ProMembership.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>12345</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:85/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>if not "$(ConfigurationName)" == "Debug" (
+
+del /a /f /s /q "$(ProjectDir)files\csharp-sdk-demo.zip"
+cd "$(SolutionDir)Prolliance.Membership.ServiceClients.Demo"
+"$(SolutionDir)Prolliance.Membership.Ref\zip.exe" -r "$(ProjectDir)files\csharp-sdk-demo.zip"  "./*"
+
+del /a /f /s /q "$(ProjectDir)files\csharp-sdk.zip"
+cd "$(SolutionDir)Prolliance.Membership.ServiceClients\bin\$(ConfigurationName)"
+"$(SolutionDir)Prolliance.Membership.Ref\zip.exe" -r "$(ProjectDir)files\csharp-sdk.zip"  "./*"
+
+del /a /f /s /q "$(ProjectDir)files\csharp-sdk-doc.zip"
+cd "$(SolutionDir)Prolliance.Membership.Document\Help"
+"$(SolutionDir)Prolliance.Membership.Ref\zip.exe" -r "$(ProjectDir)files\csharp-sdk-doc.zip"  "./*.chm"
+)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

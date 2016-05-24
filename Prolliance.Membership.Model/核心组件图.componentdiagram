@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="48ad63a6-1367-4ddb-a560-8df707138084" name="sys" linkedPackageId="c3a7a80c-80ac-43da-b855-a5011f51fcf4" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="885e01dc-c102-4f27-bf2d-4515c9ef7763" name="用户管理" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fcb88639-e6ea-40c8-86de-9af43035d00f" />
+        <suppliersInternal>
+          <dependency Id="bee45d80-5896-49c0-8603-a04871464f51">
+            <componentMoniker Id="763dec43-043b-4389-a984-89f4d842cce6" LastKnownName="身份认证中心" />
+            <elementDefinition Id="fbc29af0-1f3c-4d64-8fc4-fe31e1f71c0a" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface Id="e8310a92-639c-4991-9bed-880f0514288d" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="bb1a7ca6-41f3-439e-b840-426174e31957" />
+            <type_NamedElement>
+              <interfaceMoniker Id="0010cc7c-240f-473e-838d-f1e4e4dbb600" LastKnownName="用户列表(R)" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="d792e9c8-e2f6-4ca0-85d7-00a5040c209a" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ece5e000-740b-466d-a3d9-3487f59def8c" />
+            <type_NamedElement>
+              <interfaceMoniker Id="832bf61a-dad4-4a8d-9f9e-249e45416d02" LastKnownName="用户信息(RU[CD])" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="239e7d03-fea6-46b8-90c4-fdf231994b5d" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="5680aa44-21a8-4be7-a670-f9f2d12b20d3" />
+            <type_NamedElement>
+              <interfaceMoniker Id="7c7fe9b7-6e83-445d-8ba9-6ac7de1b2f40" LastKnownName="身份认证" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface Id="94138590-ba97-4398-8f89-388c2eb674bd" name="Port4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="a1deb4fb-9638-46c7-89aa-149a5620a786" />
+            <type_NamedElement>
+              <interfaceMoniker Id="433e2e75-79a9-46c0-b928-ac27879c8437" LastKnownName="用户信息(CRUD)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="99a4ade5-41e7-4004-b1d9-edf782c8ad17" name="Port5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="f2fbd44f-b252-4cd4-9a2c-22a42287d89d" />
+            <type_NamedElement>
+              <interfaceMoniker Id="829491b0-10f1-432e-8b34-762fb30b194c" LastKnownName="用户列表(R)" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="0010cc7c-240f-473e-838d-f1e4e4dbb600" name="用户列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9e18cebb-a6a6-41f8-8e58-89eeaed0b8d4" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="832bf61a-dad4-4a8d-9f9e-249e45416d02" name="用户信息(RU[CD])" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="baedfdc8-934e-45a6-852e-9925e9c6bb34" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="7c7fe9b7-6e83-445d-8ba9-6ac7de1b2f40" name="身份认证" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb3155ac-f190-4e9b-96e7-83e6355c5a4f" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="763dec43-043b-4389-a984-89f4d842cce6" name="身份认证中心" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e9952c57-e68c-4dba-b11d-4a837ca6f3ab" />
+        <ownedAttributesInternal>
+          <providedInterface Id="f65559c5-b0bf-4270-af66-a3f0f9746699" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="0adf4d6b-9299-4fbc-bacf-8302f4329f71" />
+            <type_NamedElement>
+              <interfaceMoniker Id="0b1f1739-53b5-4e8d-93e7-66f151d7fb3f" LastKnownName="用户列表(R)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="664aef8d-04c7-4957-accf-b0ccb9050c50" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="0e345f33-9745-421a-b52c-e34fadde30b6" />
+            <type_NamedElement>
+              <interfaceMoniker Id="a7c66b42-e689-487d-9b18-67de12f61452" LastKnownName="身份认证" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="4248cd96-a74d-4033-b594-b0394b955e61" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="df1f13e5-1307-4514-b310-ca658808b8f3" />
+            <type_NamedElement>
+              <interfaceMoniker Id="f3ade73b-ba80-442e-81f0-804b444bd042" LastKnownName="用户信息(RU[CD])" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="0b1f1739-53b5-4e8d-93e7-66f151d7fb3f" name="用户列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ca1043af-3b81-4668-8f10-50ed9ea165ff" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="a7c66b42-e689-487d-9b18-67de12f61452" name="身份认证" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e56e1d7a-1d01-4fc3-a46f-1bf7737f9729" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="c7f90d61-921a-4322-9e9e-4248575a72e4" name="组织结构(部门或组)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7c49c661-3bde-4cc6-b9c3-0169014ee3c0" />
+        <suppliersInternal>
+          <dependency Id="dc072c91-d338-491c-8b60-a1a5209166ce">
+            <componentMoniker Id="885e01dc-c102-4f27-bf2d-4515c9ef7763" LastKnownName="用户管理" />
+            <elementDefinition Id="ce7cb1fd-de15-4662-ab54-6be13849bc81" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface Id="c8560ce6-0451-4919-b92f-6738315d1267" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="4f911fb8-7948-4de7-b95d-728dbc0ba3a8" />
+            <type_NamedElement>
+              <interfaceMoniker Id="d0e521d9-107f-458b-a681-45c136240e42" LastKnownName="用户列表(R)" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="7a902b46-d6a1-4962-b456-f34870c432a1" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="d11b85b7-ee25-4300-b225-a855b019271e" />
+            <type_NamedElement>
+              <interfaceMoniker Id="0c1b41b5-49bb-41f7-ab15-9c0e468f9d19" LastKnownName="用户信息(R)" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface Id="7994c641-d168-4155-9986-bd71b096b49d" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="7433c16e-6468-40eb-8df5-d5f91058b758" />
+            <type_NamedElement>
+              <interfaceMoniker Id="7202d7fb-638f-445c-a037-75a35017a5c3" LastKnownName="部门列表(R)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="ff65db0b-cdb8-4c9a-a0a4-d53eaee4d1fa" name="Port4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="9c48d3be-0488-4679-96df-d26abda82bf3" />
+            <type_NamedElement>
+              <interfaceMoniker Id="7f9a7f78-d5f2-43ac-a37a-e9e0caf7a4b0" LastKnownName="部门&gt;用户列表(CRD)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="1d6209e1-cc23-4c4d-b50f-e18872ae5d8d" name="Port5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="14eae18e-1449-472e-ab14-d2be7d88bf99" />
+            <type_NamedElement>
+              <interfaceMoniker Id="1dbf21c9-e491-474e-83df-7ef6982a2ca1" LastKnownName="部门&gt;岗位(CRUD)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="4a682c7a-a657-4907-a98e-773f62d3e5d8" name="Port6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="cc57137b-376b-4ddb-a187-fb03db946d15" />
+            <type_NamedElement>
+              <interfaceMoniker Id="53cb574d-f46d-46cf-9b97-feff11573a9e" LastKnownName="岗位&gt;用户列表(CRD)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="615edc0e-bc49-487f-849f-40cbd3c11a73" name="Port7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="6044d714-2c4b-423a-a143-46ed8d82c4d2" />
+            <type_NamedElement>
+              <interfaceMoniker Id="8372e3a4-b9f7-4d34-bb77-ceb749963218" LastKnownName="部门&gt;岗位列表(CRD)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="5686844f-1810-483f-82a2-d844220e75de" name="Port8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="9cf89a2c-29b6-434f-bf1a-9d93d43fb56c" />
+            <type_NamedElement>
+              <interfaceMoniker Id="4232465a-0dd7-4e74-a854-713d9acbbf6e" LastKnownName="部门(CRUD)" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="d0e521d9-107f-458b-a681-45c136240e42" name="用户列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d4bd011-495c-4495-814e-953b4f3ca76e" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="0c1b41b5-49bb-41f7-ab15-9c0e468f9d19" name="用户信息(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5ee1ca13-184c-47c5-8544-4a154a72cec8" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="7202d7fb-638f-445c-a037-75a35017a5c3" name="部门列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ffe4f7d8-3397-406e-8a30-305f942dfdde" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="7f9a7f78-d5f2-43ac-a37a-e9e0caf7a4b0" name="部门&gt;用户列表(CRD)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="56d68bb0-494a-4530-8b9d-0a5bb5932ebc" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="89f119c8-2a56-44af-b42d-9f0591d3478a" name="角色管理" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="08b7a7f8-fddf-41ee-851b-56f142809438" />
+        <suppliersInternal>
+          <dependency Id="c0235c1b-0b05-40dd-991f-ca290c5f000e">
+            <componentMoniker Id="885e01dc-c102-4f27-bf2d-4515c9ef7763" LastKnownName="用户管理" />
+            <elementDefinition Id="d4a6cd19-a4dc-4f15-b32d-ff36e16c1e31" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface Id="9c7e34ae-de23-48f1-a132-0f2d28ac82db" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="fe9d5497-6ec4-4d99-bbcd-2000e1f8ff2a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="f717f5f3-2ad6-424b-a313-49db2358b4a6" LastKnownName="用户列表(R)" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface Id="8cf9e159-e74f-41f2-9b0b-601c88372682" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="93214bb6-b602-435a-82c2-030818580fce" />
+            <type_NamedElement>
+              <interfaceMoniker Id="f907defb-ec1d-4113-8202-f896235fa4e7" LastKnownName="角色(CRUD)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="a94e0278-c415-4796-8f3e-2a82222b6918" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="5cc26d94-8e4c-4da5-a210-ca22b477776e" />
+            <type_NamedElement>
+              <interfaceMoniker Id="9c5c84d9-ca65-4086-8088-21251dafed4c" LastKnownName="角色列表(R)" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="1dbf21c9-e491-474e-83df-7ef6982a2ca1" name="部门&gt;岗位(CRUD)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8b2f66f6-f051-44b8-b444-eee6c2a16ce2" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="53cb574d-f46d-46cf-9b97-feff11573a9e" name="岗位&gt;用户列表(CRD)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18aad4d4-2921-4d3f-9413-459db87035ad" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f3ade73b-ba80-442e-81f0-804b444bd042" name="用户信息(RU[CD])" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7fa35f39-2385-485b-9d5b-ece3b616f3b4" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="433e2e75-79a9-46c0-b928-ac27879c8437" name="用户信息(CRUD)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7a1230aa-2d93-4325-abba-9604d16c0d2e" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="829491b0-10f1-432e-8b34-762fb30b194c" name="用户列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e2af814-e8da-4202-aea6-4d28e1d56294" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="8372e3a4-b9f7-4d34-bb77-ceb749963218" name="部门&gt;岗位列表(CRD)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="24195748-5ac0-4abb-9909-33aa9fd940e0" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f717f5f3-2ad6-424b-a313-49db2358b4a6" name="用户列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b3886adc-84f5-4466-a2cf-e244d5d1c441" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f907defb-ec1d-4113-8202-f896235fa4e7" name="角色(CRUD)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5ec891a-e3b5-4ede-a185-7f49b5a8c2d0" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="4232465a-0dd7-4e74-a854-713d9acbbf6e" name="部门(CRUD)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50971ce5-768b-483e-9233-edc3cd851906" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="9c5c84d9-ca65-4086-8088-21251dafed4c" name="角色列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bca6e787-7d16-407a-9c91-797f06d9be5b" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="ed72a82a-4ec8-4309-bc84-faf80812f999" name="权限范围管理" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3667fbfe-648e-4afe-bbfe-91081da07e22" />
+        <suppliersInternal>
+          <dependency Id="657f96d4-a2b4-463c-b25f-31fc47bf7b62">
+            <componentMoniker Id="c7f90d61-921a-4322-9e9e-4248575a72e4" LastKnownName="组织结构(部门或组)" />
+            <elementDefinition Id="742f07de-a32c-4199-b279-ab7c096c2cde" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="8bb86e34-e67e-404b-bc7f-723046ab4a62" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="8cb1a939-a0a4-4a7f-b8c5-6baf5e3f270a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="c36115e7-4e47-4b57-a355-7755e995331a" LastKnownName="注册范围(C)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="968b45ae-681a-414b-a847-b5dcda4df36d" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="acc8d08c-ec8e-4c21-8ee4-0fed24bc0f7c" />
+            <type_NamedElement>
+              <interfaceMoniker Id="c060b8fd-620c-445a-ad86-a57d3b1b2011" LastKnownName="范围列表(R)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="19412603-e9e7-4fd8-b9a7-678749efe336" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="121ee0e5-3213-4e02-ad71-a79b1244b6e1" />
+            <type_NamedElement>
+              <interfaceMoniker Id="41d4bf80-a84b-4c99-90c8-c0815976d18a" LastKnownName="注销范围(D)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="bc8e4b9b-13be-4e26-b25f-3056ee4b5371" name="Port4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="8531ec21-97ed-4a95-a0f1-531bf7c4e374" />
+            <type_NamedElement>
+              <interfaceMoniker Id="1546d811-21c3-4689-9689-485ce68e488b" LastKnownName="注册动态范围(C)" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="bef76779-6304-484d-8a30-c27997c5bb36" name="权限配置管理" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="174ddd27-5933-46ea-b017-5827b1c5c808" />
+        <suppliersInternal>
+          <dependency Id="d9c74ecb-ba92-44f8-ad1c-289274d12d51">
+            <componentMoniker Id="ed72a82a-4ec8-4309-bc84-faf80812f999" LastKnownName="权限范围管理" />
+            <elementDefinition Id="5fd99cdd-e7bb-49bf-b1f6-f247d3633f13" />
+          </dependency>
+          <dependency Id="9442729c-6c45-44e4-9342-6c47df36d1d5">
+            <componentMoniker Id="89f119c8-2a56-44af-b42d-9f0591d3478a" LastKnownName="角色管理" />
+            <elementDefinition Id="d5a1cf3b-228d-49dc-9dc7-610179230257" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="4ad160db-76af-4b75-a09b-3fffd3182259" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="6d1e3bde-7036-475e-8e9f-34342948cf93" />
+            <type_NamedElement>
+              <interfaceMoniker Id="d4fc23df-4b29-4d00-b6ae-db345c617ece" LastKnownName="查询用户权限" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface Id="fbd3e4b3-49ab-4d7b-b22e-956b73ed3ff5" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="1bc77fc0-106d-4135-a93e-ef338af1fbff" />
+            <type_NamedElement>
+              <interfaceMoniker Id="2acf36b4-3d96-4c97-9321-a7ef23680e2a" LastKnownName="角色列表(R)" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="0d1faf3d-4eb5-4871-baed-f0f61bdfbe2a" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="c8862de9-3dc1-4910-b9bf-1bde5c2dcd09" />
+            <type_NamedElement>
+              <interfaceMoniker Id="e9434ca6-ba1c-478e-a351-ea20daae71cd" LastKnownName="范围列表(R)" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface Id="64af4630-ea75-42d2-9524-e0ea475e19d6" name="Port4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="7640238c-182f-479e-bc31-2ad8f420eb14" />
+            <type_NamedElement>
+              <interfaceMoniker Id="d80e36bf-c231-4a7f-b2d3-fb5e868bb752" LastKnownName="范围表达式解析(R)" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="125f4091-bfa6-4b49-9085-18512cbd0fd0" name="Port5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="1cb5441b-c507-4b28-b724-6148266cc2fd" />
+            <type_NamedElement>
+              <interfaceMoniker Id="f615086c-3e69-4899-a50a-a142f8188974" LastKnownName="权限配置(CRUD)" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="d4fc23df-4b29-4d00-b6ae-db345c617ece" name="查询用户权限" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1f56909b-64d8-4e59-8053-77cecabe22fd" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="c36115e7-4e47-4b57-a355-7755e995331a" name="注册范围(C)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c290924-bee0-4240-af99-03990d657b63" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="c060b8fd-620c-445a-ad86-a57d3b1b2011" name="范围列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c3962f4d-5fa1-4bdf-b4b9-96cbad32efc9" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="41d4bf80-a84b-4c99-90c8-c0815976d18a" name="注销范围(D)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8afc9f6b-6bea-42d0-9d8d-4e9f132aa7d9" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="2acf36b4-3d96-4c97-9321-a7ef23680e2a" name="角色列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7ab51591-665e-4b85-8641-339cbe18bf66" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="e9434ca6-ba1c-478e-a351-ea20daae71cd" name="范围列表(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5b145c6a-c947-4d04-ba7a-0f071a8ffb4d" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="d80e36bf-c231-4a7f-b2d3-fb5e868bb752" name="范围表达式解析(R)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f88a762-b0cf-4792-82eb-c949020a6fdf" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f615086c-3e69-4899-a50a-a142f8188974" name="权限配置(CRUD)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="496b2d50-2956-49aa-af6e-48bf0978cc45" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="1546d811-21c3-4689-9689-485ce68e488b" name="注册动态范围(C)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="64805b81-0634-4e32-9a85-7a22603c3db1" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="c3a7a80c-80ac-43da-b855-a5011f51fcf4" name="Pro">
+    <elementDefinition Id="ea8b083a-4cba-4fcd-9ed6-cae88fec9762" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b2b01dfc-17ad-4645-b6b3-0afe34d8cfcf">
+        <profileInstance Id="e1456bad-a502-4594-a1d8-50108a0e1075" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="71bb31b9-d272-490e-b8af-19a89bedbbae">
+        <profileInstance Id="928e8624-1fda-462b-882d-b30db56a5edf" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

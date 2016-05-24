@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://houfeng.net/Amuse.xsd">
+  <bean name="easy-cache" type="Prolliance.EasyCache.Impls.MemoryCache" mode="singleton">
+  </bean><% var groupList = this.SettingGroups.ToArray();for(var i in groupList){var group =groupList[i]; var items = group.Items.ToArray(); %>
+  <bean name="<%$(group.Name)%>" type="<%$(group.Value)%>" group="<%$(group.Group)%>" mode="singleton"><% for(var j in items){ var item = items[j];%>
+    <property name="<%$(item.Name)%>">
+      <%$(item.Value)%>
+    </property><% } %>
+  </bean><% } %>
+</beans>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="IApp">
+    <Position X="9" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAABAAAAQAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedCode\IApp.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="FunctionCategorys" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="IFunction">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedCode\IFunction.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IFunctionCategory">
+    <Position X="8.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAQAAAAAAAAAAAAAAYAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedCode\IFunctionCategory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Functions" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="IOrganization">
+    <Position X="3.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAACAAAAAAEIAgAAAEIAQAAAIAAAAgAwAAAAAAUAA=</HashCode>
+      <FileName>GeneratedCode\IOrganization.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Positions" />
+      <Property Name="Users" />
+      <Property Name="Children" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="IPosition">
+    <Position X="6.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAIAAAAAAAAQAAAAAAAAAAAAAIAEAAAA=</HashCode>
+      <FileName>GeneratedCode\IPosition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ReportType" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="IRole">
+    <Position X="3" Y="1" Width="2" />
+    <AssociationLine Name="Users" Type="IUser" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="3.944" />
+        <Point X="2.271" Y="3.944" Type="JumpStart" />
+        <Point X="2.104" Y="3.944" Type="JumpEnd" />
+        <Point X="1.75" Y="3.944" />
+        <Point X="1.75" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAGAACAQAAAAACBgAAAAAAYAAgAAAGAggAAAAQAAAAA=</HashCode>
+      <FileName>GeneratedCode\IRole.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Users" />
+      <Property Name="Functions" />
+      <Property Name="Scopes" />
+      <Property Name="Organizations" />
+      <Property Name="Positions" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="IScope">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAEAAAAAAEAAQAAAIAAAAAAgAgAAAAAAA=</HashCode>
+      <FileName>GeneratedCode\IScope.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IUser">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <AssociationLine Name="Roles" Type="IRole" ManuallyRouted="true">
+      <Path>
+        <Point X="2.188" Y="5.25" />
+        <Point X="2.188" Y="3.712" />
+        <Point X="2.365" Y="3.712" />
+        <Point X="2.365" Y="1.094" />
+        <Point X="3" Y="1.094" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEBAACAAAAQAAgAAgAAAAAAAABAAAEA=</HashCode>
+      <FileName>GeneratedCode\IUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Roles" />
+      <Property Name="Organizations" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Enum Name="IReportType">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedCode\IReportType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OrganizationType">
+    <Position X="9" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgABAAAAAA=</HashCode>
+      <FileName>GeneratedCode\OrganizationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

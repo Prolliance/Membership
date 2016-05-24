@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4708E3C8-FB4F-40A7-90E9-3A74EC321A52}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prolliance.Membership.Test.Win</RootNamespace>
+    <AssemblyName>Prolliance.Membership.Test.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Distribution|AnyCPU'">
+    <OutputPath>bin\Distribution\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Amuse, Version=0.2.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Prolliance.Membership.Ref\Amuse.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TpNet">
+      <HintPath>..\Prolliance.Membership.Ref\TpNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Amuse.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prolliance.Membership.Business\Membership.Business.csproj">
+      <Project>{fc497b9e-429b-4f27-adad-d7ec425de1bb}</Project>
+      <Name>Membership.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.DataPersistence\Membership.DataPersistence.csproj">
+      <Project>{f8f9b0d9-23ea-48b1-a201-cba71755bc69}</Project>
+      <Name>Membership.DataPersistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.DataProvider.MongoDB\Membership.DataProvider.MongoDB.csproj">
+      <Project>{9df5b683-8ba8-4a3f-91ea-758c3277bb75}</Project>
+      <Name>Membership.DataProvider.MongoDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.DataProvider.SQLServer\Membership.DataProvider.SQLServer.csproj">
+      <Project>{19b58c48-bd8c-43f1-890e-450914192322}</Project>
+      <Name>Membership.DataProvider.SQLServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.Passport.Database\Membership.Passport.Database.csproj">
+      <Project>{7d50516b-804d-4fa2-a5d7-b0b054dd066e}</Project>
+      <Name>Membership.Passport.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.Passport.DC\Membership.Passport.DC.csproj">
+      <Project>{f566f4a4-22b2-47a2-a76a-f1f21cff011f}</Project>
+      <Name>Membership.Passport.DC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

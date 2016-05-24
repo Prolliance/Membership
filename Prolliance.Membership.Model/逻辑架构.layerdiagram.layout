@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerDiagram dslVersion="1.0.0.0" Id="6f5d5137-e4d5-4ff0-9a57-58d94f46784e" absoluteBounds="0, 0, 11, 8.5" name="逻辑架构">
+  <layerModelMoniker Id="82084d45-a7be-42d7-b314-1bd6285d7939" />
+  <nestedChildShapes>
+    <layerShape Id="32a8d35d-4a51-4cb5-98f2-f064217adad0" absoluteBounds="0.5, 0.5, 5.375, 1.625" customColor="161, 199, 231">
+      <layerMoniker Id="4e3ad398-a820-447f-96c2-9f7a48a65259" />
+    </layerShape>
+    <layerShape Id="e4c760bf-8794-4f50-ab71-c9971c79293c" absoluteBounds="0.5, 2.5, 5.375, 1.5" customColor="161, 199, 231">
+      <layerMoniker Id="78b11eb7-b109-49f2-990e-4f0599822e4d" />
+    </layerShape>
+    <layerShape Id="9f2df330-504c-49b4-8cf0-7e46e58717ae" absoluteBounds="0.5, 4.375, 5.375, 1.5" customColor="161, 199, 231">
+      <layerMoniker Id="db772463-1653-47b3-9540-f5df6f8a3f2b" />
+    </layerShape>
+    <dependencyConnector edgePoints="[(3.1875 : 2.125); (3.1875 : 2.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <dependencyFromLayerToLayerMoniker Id="1a3ef77c-635a-4005-87b1-84941c6653da" />
+      <relativeChildShapes />
+      <nodes>
+        <layerShapeMoniker Id="32a8d35d-4a51-4cb5-98f2-f064217adad0" />
+        <layerShapeMoniker Id="e4c760bf-8794-4f50-ab71-c9971c79293c" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(3.1875 : 4); (3.1875 : 4.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <dependencyFromLayerToLayerMoniker Id="a779028d-55d1-4d9e-9bd8-a9b4861a2762" />
+      <relativeChildShapes />
+      <nodes>
+        <layerShapeMoniker Id="e4c760bf-8794-4f50-ab71-c9971c79293c" />
+        <layerShapeMoniker Id="9f2df330-504c-49b4-8cf0-7e46e58717ae" />
+      </nodes>
+    </dependencyConnector>
+    <layerShape Id="fa491ccd-1192-4900-bf76-2e90afd37b5c" absoluteBounds="0.5, 6.375, 5.375, 1.25" customColor="161, 199, 231">
+      <layerMoniker Id="85be01ee-6b4a-4424-aa78-8664c6a12960" />
+    </layerShape>
+    <dependencyConnector edgePoints="[(3.1875 : 5.875); (3.1875 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <dependencyFromLayerToLayerMoniker Id="632986ec-ba9b-4f22-b357-a547975c2dfd" />
+      <relativeChildShapes />
+      <nodes>
+        <layerShapeMoniker Id="9f2df330-504c-49b4-8cf0-7e46e58717ae" />
+        <layerShapeMoniker Id="fa491ccd-1192-4900-bf76-2e90afd37b5c" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</layerDiagram>

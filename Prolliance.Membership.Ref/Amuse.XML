@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Amuse</name>
+    </assembly>
+    <members>
+        <member name="T:Amuse.Container">
+            <summary>
+            Amuse 容器
+            </summary>
+        </member>
+        <member name="M:Amuse.Container.Create(System.String)">
+            <summary>
+            创建一个对象容器
+            </summary>
+            <param name="configFileOrAppSettingKey">“配置文件路径” 或 “AppSetting配置节 Key”</param>
+            <returns>容器</returns>
+        </member>
+        <member name="M:Amuse.Container.Create">
+            <summary>
+            默认容器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amuse.Container.Get``1(System.String)">
+            <summary>
+            获取一个实例
+            </summary>
+            <typeparam name="T">对应类型（一般为接口）</typeparam>
+            <param name="beanName">Bean Name</param>
+            <returns>实例</returns>
+        </member>
+        <member name="M:Amuse.Container.Get(System.String)">
+            <summary>
+            获取一个实例
+            </summary>
+            <param name="beanName">Bean Name</param>
+            <returns>实例</returns>
+        </member>
+        <member name="M:Amuse.Container.GetByGroup(System.String)">
+            <summary>
+            获取一组实例
+            </summary>
+            <param name="beanGroup">Bean Group Name</param>
+            <returns>实例列表</returns>
+        </member>
+        <member name="M:Amuse.Container.GetByGroup``1(System.String)">
+            <summary>
+            获取一组实例
+            </summary>
+            <typeparam name="T">对应类型（一般为接口）</typeparam>
+            <param name="beanGroup">Bean Group Name</param>
+            <returns>实例列表</returns>
+        </member>
+    </members>
+</doc>

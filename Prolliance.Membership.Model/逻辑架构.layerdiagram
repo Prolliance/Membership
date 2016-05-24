@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="82084d45-a7be-42d7-b314-1bd6285d7939" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="4e3ad398-a820-447f-96c2-9f7a48a65259" name="服务发布层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1a3ef77c-635a-4005-87b1-84941c6653da" direction="Forward">
+          <layerMoniker Id="78b11eb7-b109-49f2-990e-4f0599822e4d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="78b11eb7-b109-49f2-990e-4f0599822e4d" name="业务逻辑层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a779028d-55d1-4d9e-9bd8-a9b4861a2762" direction="Forward">
+          <layerMoniker Id="db772463-1653-47b3-9540-f5df6f8a3f2b" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="db772463-1653-47b3-9540-f5df6f8a3f2b" name="数据访问层">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="632986ec-ba9b-4f22-b357-a547975c2dfd" direction="Forward">
+          <layerMoniker Id="85be01ee-6b4a-4424-aa78-8664c6a12960" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="85be01ee-6b4a-4424-aa78-8664c6a12960" name="数据存储" />
+  </layers>
+</layerModel>

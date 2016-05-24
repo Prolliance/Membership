@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="51ecdd73-8f44-480e-99cb-5df94adec261" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>Version v0.2.0.0 was released on 2014-07-10.
+			</para>
+		</introduction>
+
+		<section>
+			<title>Changes in This Release</title>
+			<content>
+
+				<list class="bullet">
+					<listItem>
+						<para>基础应用框架接口初稿</para>
+					</listItem>
+
+				</list>
+
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="ccfe9c2d-c396-46ea-bf63-6f98be3bad03" />
+		</relatedTopics>
+
+	</developerConceptualDocument>
+</topic>

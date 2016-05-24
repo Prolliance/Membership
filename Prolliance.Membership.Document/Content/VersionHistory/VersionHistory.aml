@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ccfe9c2d-c396-46ea-bf63-6f98be3bad03" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        The topics in this section describe the various changes made to the "基础应用框架" over the
+        life of the project.
+      </para>
+    </introduction>
+
+    <section>
+      <title>Version History</title>
+      <content>
+        <para>Select a version below to see a description of its changes.</para>
+
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="51ecdd73-8f44-480e-99cb-5df94adec261" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="51ecdd73-8f44-480e-99cb-5df94adec262" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="51ecdd73-8f44-480e-99cb-5df94adec263" />
+            </para>
+          </listItem>
+        </list>
+
+      </content>
+    </section>
+
+    <relatedTopics>
+      <link xlink:href="d7ad44a6-2a47-4542-827d-949bcf0c11bc" />
+    </relatedTopics>
+
+  </developerConceptualDocument>
+</topic>

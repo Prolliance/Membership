@@ -1,0 +1,19 @@
+﻿html, body, form { width: 100%; height: 100%; padding: 0px; margin: 0px; color: #222; font-family: 微软雅黑, Verdana; font-size: 13px; }
+textarea, textarea:focus { resize: none; }
+.dialog-header, .dialog-footer { background: #eee; }
+.dialog-footer { text-align: right; }
+.dialog-header .view, .dialog-footer .view, .dialog-content .view, .content .view { padding: 8px; }
+.dialog-content { overflow: auto; }
+.toolbar { padding: 3px 0px; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border: solid 1px #ddd; padding: 3px; text-align: left; border-collapse: collapse; }
+.table td.noborder { border: none; }
+.table th { background: #f3f3f3; font-weight: normal; }
+.table tr:hover { background: #fbfbfb; }
+.table tr.ui-sortable-helper { border: solid 1px #ddd; }
+input[type=button], input[type=submit], button { padding: 2px 8px; font-family: 微软雅黑; }
+input[type=text], input[type=password], select, textarea { padding: 3px; width: 70%; border: solid 1px #ccc; font-family: 微软雅黑; }
+.tree { padding: 8px; }
+.tree img { vertical-align: text-bottom; }
+.tree .node { color: #333; text-decoration: none; vertical-align: text-bottom; }
+.tree .node.selected { color: orange; }

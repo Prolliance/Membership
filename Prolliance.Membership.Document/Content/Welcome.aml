@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="d7ad44a6-2a47-4542-827d-949bcf0c11bc" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>“基础应用框架SDK For .NET”包括完整的在 .NET 平台使用“基础应用框架”相关的方法及说明</para>
+    </introduction>
+
+    <section>
+      <title>Getting Started</title>
+      <content>
+        <para>汇力凯途“基础应用框架”是一个完合符合 RBAC3 权限模型，并扩展支持“距陈式”企业组织架构的一个“基础数据管理、权限管理”框架。同时还具备“应用管理”功能，可以作为一个统一的“企业应用开放平台”，为企业内相关应用提供基础服务，以节省企业“IT/研发”相关投入。</para>
+        <para>主要包括如下功能：</para>
+        <list class="bullet">
+          <listItem>
+            <para>应用管理。</para>
+          </listItem>
+
+          <listItem>
+            <para>基础数据管理</para>
+          </listItem>
+
+          <listItem>
+            <para>权限管理</para>
+          </listItem>
+        </list>
+
+      </content>
+    </section>
+
+    <relatedTopics>
+      <link xlink:href="ccfe9c2d-c396-46ea-bf63-6f98be3bad03" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

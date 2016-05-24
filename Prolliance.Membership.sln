@@ -1,0 +1,337 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Platform", "1 Platform", "{62D47772-91D8-4B96-9B16-71F95CC5CC2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Common", "3 Common", "{6470D4C5-3432-41D9-88A2-D6D0F9E3CB5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Tests", "2 Tests", "{84E2920F-B374-403C-999B-8DE19A53D5F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.3 DAL", "2.3 DAL", "{A144084A-93FA-4BC3-A9B0-6A8EA28E3BCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.2 BLL", "2.2 BLL", "{AFF86B1A-EFF3-4E7C-B025-B8E5515CCA30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 UI", "2.1 UI", "{A3ABB351-A0AF-4B75-BCEF-22D45BB51447}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.4 COM", "2.4 COM", "{64685A94-2105-44CC-99DA-9DCA626E13EB}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Membership.Document", "Prolliance.Membership.Document\Membership.Document.shfbproj", "{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E867335-FC55-4D77-B91F-C3EFC722A8F6} = {5E867335-FC55-4D77-B91F-C3EFC722A8F6}
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D} = {BAC4D281-657C-4AC4-AD11-30AC5678716D}
+	EndProjectSection
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Membership.Model", "Prolliance.Membership.Model\Membership.Model.modelproj", "{DFE69AF5-21A6-47FE-BDEA-C43200823475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Model.Lib", "Prolliance.Membership.Model.Lib\Membership.Model.Lib.csproj", "{31B961A9-2CE0-4D3C-9900-998D1794324E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Ref", "Prolliance.Membership.Ref\Membership.Ref.csproj", "{CC8E9F25-2CB3-4310-B7E8-1ED7199794A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Business", "Prolliance.Membership.Business\Membership.Business.csproj", "{FC497B9E-429B-4F27-ADAD-D7EC425DE1BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prolliance.EasyCache", "Prolliance.EasyCache\Prolliance.EasyCache.csproj", "{E922AF9D-AC68-4822-925E-79941ED1AD1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Common", "Prolliance.Membership.Common\Membership.Common.csproj", "{2109FD12-E92D-4E94-A170-6AFE3AAFE2EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.DataPersistence", "Prolliance.Membership.DataPersistence\Membership.DataPersistence.csproj", "{F8F9B0D9-23EA-48B1-A201-CBA71755BC69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.DataProvider.MongoDB", "Prolliance.Membership.DataProvider.MongoDB\Membership.DataProvider.MongoDB.csproj", "{9DF5B683-8BA8-4A3F-91EA-758C3277BB75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.DataProvider.SQLServer", "Prolliance.Membership.DataProvider.SQLServer\Membership.DataProvider.SQLServer.csproj", "{19B58C48-BD8C-43F1-890E-450914192322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.DataTransfer", "Prolliance.Membership.DataTransfer\Membership.DataTransfer.csproj", "{5A8D3805-9A56-4E24-A339-2FB3E371E53C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.ServiceClients", "Prolliance.Membership.ServiceClients\Membership.ServiceClients.csproj", "{5E867335-FC55-4D77-B91F-C3EFC722A8F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.ServicePoint", "Prolliance.Membership.ServicePoint\Membership.ServicePoint.csproj", "{EE5AC7FC-1699-434D-9699-25A9E80944D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D} = {BAC4D281-657C-4AC4-AD11-30AC5678716D}
+		{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4} = {2A35B2E5-3929-49D0-80A6-D3B38EF97AF4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.UnitTest.Business", "Prolliance.Membership.UnitTest.Business\Membership.UnitTest.Business.csproj", "{92117EEC-B99A-4BD5-A509-CFA6A9FA7706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.UnitTest.DataPersitence", "Prolliance.Membership.UnitTest.DataPersitence\Membership.UnitTest.DataPersitence.csproj", "{A2A52F30-01E0-4C5E-AE06-BD10DAF4FA7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Test.Web", "Prolliance.Membership.Test.Web\Membership.Test.Web.csproj", "{3E90FFD9-43FF-4EC8-9D25-3ED3332EFA22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Passport.Database", "Prolliance.Membership.Passport.Database\Membership.Passport.Database.csproj", "{7D50516B-804D-4FA2-A5D7-B0B054DD066E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Passport.DC", "Prolliance.Membership.Passport.DC\Membership.Passport.DC.csproj", "{F566F4A4-22B2-47A2-A76A-F1F21CFF011F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.ServiceClients.Demo", "Prolliance.Membership.ServiceClients.Demo\Membership.ServiceClients.Demo.csproj", "{BAC4D281-657C-4AC4-AD11-30AC5678716D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Test.Win", "Prolliance.Membership.Test.Win\Membership.Test.Win.csproj", "{4708E3C8-FB4F-40A7-90E9-3A74EC321A52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.ServicePoint.Lib", "Prolliance.Membership.ServicePoint.Lib\Membership.ServicePoint.Lib.csproj", "{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership.Install.Lib", "Prolliance.Membership.Install.Lib\Membership.Install.Lib.csproj", "{37F1D7C8-3291-45A7-958F-85F1F0148EC9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 23
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.prolliance.cn:8088/tfs/rnd
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Prolliance.EasyCache\\Prolliance.EasyCache.csproj
+		SccProjectTopLevelParentUniqueName1 = Prolliance.Membership.sln
+		SccProjectName1 = Prolliance.EasyCache
+		SccLocalPath1 = Prolliance.EasyCache
+		SccProjectUniqueName2 = Prolliance.Membership.Business\\Membership.Business.csproj
+		SccProjectTopLevelParentUniqueName2 = Prolliance.Membership.sln
+		SccProjectName2 = Prolliance.Membership.Business
+		SccLocalPath2 = Prolliance.Membership.Business
+		SccProjectUniqueName3 = Prolliance.Membership.Common\\Membership.Common.csproj
+		SccProjectTopLevelParentUniqueName3 = Prolliance.Membership.sln
+		SccProjectName3 = Prolliance.Membership.Common
+		SccLocalPath3 = Prolliance.Membership.Common
+		SccProjectUniqueName4 = Prolliance.Membership.DataPersistence\\Membership.DataPersistence.csproj
+		SccProjectTopLevelParentUniqueName4 = Prolliance.Membership.sln
+		SccProjectName4 = Prolliance.Membership.DataPersistence
+		SccLocalPath4 = Prolliance.Membership.DataPersistence
+		SccProjectUniqueName5 = Prolliance.Membership.DataProvider.MongoDB\\Membership.DataProvider.MongoDB.csproj
+		SccProjectTopLevelParentUniqueName5 = Prolliance.Membership.sln
+		SccProjectName5 = Prolliance.Membership.DataProvider.MongoDB
+		SccLocalPath5 = Prolliance.Membership.DataProvider.MongoDB
+		SccProjectUniqueName6 = Prolliance.Membership.DataProvider.SQLServer\\Membership.DataProvider.SQLServer.csproj
+		SccProjectTopLevelParentUniqueName6 = Prolliance.Membership.sln
+		SccProjectName6 = Prolliance.Membership.DataProvider.SQLServer
+		SccLocalPath6 = Prolliance.Membership.DataProvider.SQLServer
+		SccProjectUniqueName7 = Prolliance.Membership.DataTransfer\\Membership.DataTransfer.csproj
+		SccProjectTopLevelParentUniqueName7 = Prolliance.Membership.sln
+		SccProjectName7 = Prolliance.Membership.DataTransfer
+		SccLocalPath7 = Prolliance.Membership.DataTransfer
+		SccProjectUniqueName8 = Prolliance.Membership.ServiceClients\\Membership.ServiceClients.csproj
+		SccProjectTopLevelParentUniqueName8 = Prolliance.Membership.sln
+		SccProjectName8 = Prolliance.Membership.ServiceClients
+		SccLocalPath8 = Prolliance.Membership.ServiceClients
+		SccProjectUniqueName9 = Prolliance.Membership.ServicePoint\\Membership.ServicePoint.csproj
+		SccProjectTopLevelParentUniqueName9 = Prolliance.Membership.sln
+		SccProjectName9 = Prolliance.Membership.ServicePoint
+		SccLocalPath9 = Prolliance.Membership.ServicePoint
+		SccProjectUniqueName10 = Prolliance.Membership.Document\\Membership.Document.shfbproj
+		SccProjectTopLevelParentUniqueName10 = Prolliance.Membership.sln
+		SccProjectName10 = Prolliance.Membership.Document
+		SccLocalPath10 = Prolliance.Membership.Document
+		SccProjectUniqueName11 = Prolliance.Membership.Model\\Membership.Model.modelproj
+		SccProjectTopLevelParentUniqueName11 = Prolliance.Membership.sln
+		SccProjectName11 = Prolliance.Membership.Model
+		SccLocalPath11 = Prolliance.Membership.Model
+		SccProjectUniqueName12 = Prolliance.Membership.Model.Lib\\Membership.Model.Lib.csproj
+		SccProjectTopLevelParentUniqueName12 = Prolliance.Membership.sln
+		SccProjectName12 = Prolliance.Membership.Model.Lib
+		SccLocalPath12 = Prolliance.Membership.Model.Lib
+		SccProjectUniqueName13 = Prolliance.Membership.Ref\\Membership.Ref.csproj
+		SccProjectTopLevelParentUniqueName13 = Prolliance.Membership.sln
+		SccProjectName13 = Prolliance.Membership.Ref
+		SccLocalPath13 = Prolliance.Membership.Ref
+		SccProjectUniqueName14 = Prolliance.Membership.Test.Web\\Membership.Test.Web.csproj
+		SccProjectTopLevelParentUniqueName14 = Prolliance.Membership.sln
+		SccProjectName14 = Prolliance.Membership.Test.Web
+		SccLocalPath14 = Prolliance.Membership.Test.Web
+		SccProjectUniqueName15 = Prolliance.Membership.UnitTest.Business\\Membership.UnitTest.Business.csproj
+		SccProjectTopLevelParentUniqueName15 = Prolliance.Membership.sln
+		SccProjectName15 = Prolliance.Membership.UnitTest.Business
+		SccLocalPath15 = Prolliance.Membership.UnitTest.Business
+		SccProjectUniqueName16 = Prolliance.Membership.UnitTest.DataPersitence\\Membership.UnitTest.DataPersitence.csproj
+		SccProjectTopLevelParentUniqueName16 = Prolliance.Membership.sln
+		SccProjectName16 = Prolliance.Membership.UnitTest.DataPersitence
+		SccLocalPath16 = Prolliance.Membership.UnitTest.DataPersitence
+		SccProjectUniqueName17 = Prolliance.Membership.Passport.Database\\Membership.Passport.Database.csproj
+		SccProjectTopLevelParentUniqueName17 = Prolliance.Membership.sln
+		SccProjectName17 = Prolliance.Membership.Passport.Database
+		SccLocalPath17 = Prolliance.Membership.Passport.Database
+		SccProjectUniqueName18 = Prolliance.Membership.Passport.DC\\Membership.Passport.DC.csproj
+		SccProjectTopLevelParentUniqueName18 = Prolliance.Membership.sln
+		SccProjectName18 = Prolliance.Membership.Passport.DC
+		SccLocalPath18 = Prolliance.Membership.Passport.DC
+		SccProjectUniqueName19 = Prolliance.Membership.ServiceClients.Demo\\Membership.ServiceClients.Demo.csproj
+		SccProjectTopLevelParentUniqueName19 = Prolliance.Membership.sln
+		SccProjectName19 = Prolliance.Membership.ServiceClients.Demo
+		SccLocalPath19 = Prolliance.Membership.ServiceClients.Demo
+		SccProjectUniqueName20 = Prolliance.Membership.Test.Win\\Membership.Test.Win.csproj
+		SccProjectTopLevelParentUniqueName20 = Prolliance.Membership.sln
+		SccProjectName20 = Prolliance.Membership.Test.Win
+		SccLocalPath20 = Prolliance.Membership.Test.Win
+		SccProjectUniqueName21 = Prolliance.Membership.ServicePoint.Lib\\Membership.ServicePoint.Lib.csproj
+		SccProjectTopLevelParentUniqueName21 = Prolliance.Membership.sln
+		SccProjectName21 = Prolliance.Membership.ServicePoint.Lib
+		SccLocalPath21 = Prolliance.Membership.ServicePoint.Lib
+		SccProjectUniqueName22 = Prolliance.Membership.Install.Lib\\Membership.Install.Lib.csproj
+		SccProjectTopLevelParentUniqueName22 = Prolliance.Membership.sln
+		SccProjectName22 = Prolliance.Membership.Install.Lib
+		SccLocalPath22 = Prolliance.Membership.Install.Lib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Distribution|Any CPU = Distribution|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE69AF5-21A6-47FE-BDEA-C43200823475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE69AF5-21A6-47FE-BDEA-C43200823475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE69AF5-21A6-47FE-BDEA-C43200823475}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{DFE69AF5-21A6-47FE-BDEA-C43200823475}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{DFE69AF5-21A6-47FE-BDEA-C43200823475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE69AF5-21A6-47FE-BDEA-C43200823475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B961A9-2CE0-4D3C-9900-998D1794324E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B961A9-2CE0-4D3C-9900-998D1794324E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B961A9-2CE0-4D3C-9900-998D1794324E}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{31B961A9-2CE0-4D3C-9900-998D1794324E}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{31B961A9-2CE0-4D3C-9900-998D1794324E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B961A9-2CE0-4D3C-9900-998D1794324E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8E9F25-2CB3-4310-B7E8-1ED7199794A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8E9F25-2CB3-4310-B7E8-1ED7199794A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8E9F25-2CB3-4310-B7E8-1ED7199794A5}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{CC8E9F25-2CB3-4310-B7E8-1ED7199794A5}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{CC8E9F25-2CB3-4310-B7E8-1ED7199794A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8E9F25-2CB3-4310-B7E8-1ED7199794A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC497B9E-429B-4F27-ADAD-D7EC425DE1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC497B9E-429B-4F27-ADAD-D7EC425DE1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC497B9E-429B-4F27-ADAD-D7EC425DE1BB}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{FC497B9E-429B-4F27-ADAD-D7EC425DE1BB}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{FC497B9E-429B-4F27-ADAD-D7EC425DE1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC497B9E-429B-4F27-ADAD-D7EC425DE1BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E922AF9D-AC68-4822-925E-79941ED1AD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E922AF9D-AC68-4822-925E-79941ED1AD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E922AF9D-AC68-4822-925E-79941ED1AD1A}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{E922AF9D-AC68-4822-925E-79941ED1AD1A}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{E922AF9D-AC68-4822-925E-79941ED1AD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E922AF9D-AC68-4822-925E-79941ED1AD1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2109FD12-E92D-4E94-A170-6AFE3AAFE2EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2109FD12-E92D-4E94-A170-6AFE3AAFE2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2109FD12-E92D-4E94-A170-6AFE3AAFE2EC}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{2109FD12-E92D-4E94-A170-6AFE3AAFE2EC}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{2109FD12-E92D-4E94-A170-6AFE3AAFE2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2109FD12-E92D-4E94-A170-6AFE3AAFE2EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F9B0D9-23EA-48B1-A201-CBA71755BC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F9B0D9-23EA-48B1-A201-CBA71755BC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F9B0D9-23EA-48B1-A201-CBA71755BC69}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{F8F9B0D9-23EA-48B1-A201-CBA71755BC69}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{F8F9B0D9-23EA-48B1-A201-CBA71755BC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F9B0D9-23EA-48B1-A201-CBA71755BC69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF5B683-8BA8-4A3F-91EA-758C3277BB75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF5B683-8BA8-4A3F-91EA-758C3277BB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF5B683-8BA8-4A3F-91EA-758C3277BB75}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{9DF5B683-8BA8-4A3F-91EA-758C3277BB75}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{9DF5B683-8BA8-4A3F-91EA-758C3277BB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF5B683-8BA8-4A3F-91EA-758C3277BB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B58C48-BD8C-43F1-890E-450914192322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B58C48-BD8C-43F1-890E-450914192322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B58C48-BD8C-43F1-890E-450914192322}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{19B58C48-BD8C-43F1-890E-450914192322}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{19B58C48-BD8C-43F1-890E-450914192322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B58C48-BD8C-43F1-890E-450914192322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A8D3805-9A56-4E24-A339-2FB3E371E53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8D3805-9A56-4E24-A339-2FB3E371E53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8D3805-9A56-4E24-A339-2FB3E371E53C}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{5A8D3805-9A56-4E24-A339-2FB3E371E53C}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{5A8D3805-9A56-4E24-A339-2FB3E371E53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8D3805-9A56-4E24-A339-2FB3E371E53C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E867335-FC55-4D77-B91F-C3EFC722A8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E867335-FC55-4D77-B91F-C3EFC722A8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E867335-FC55-4D77-B91F-C3EFC722A8F6}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{5E867335-FC55-4D77-B91F-C3EFC722A8F6}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{5E867335-FC55-4D77-B91F-C3EFC722A8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E867335-FC55-4D77-B91F-C3EFC722A8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5AC7FC-1699-434D-9699-25A9E80944D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5AC7FC-1699-434D-9699-25A9E80944D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5AC7FC-1699-434D-9699-25A9E80944D1}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{EE5AC7FC-1699-434D-9699-25A9E80944D1}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{EE5AC7FC-1699-434D-9699-25A9E80944D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5AC7FC-1699-434D-9699-25A9E80944D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92117EEC-B99A-4BD5-A509-CFA6A9FA7706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92117EEC-B99A-4BD5-A509-CFA6A9FA7706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92117EEC-B99A-4BD5-A509-CFA6A9FA7706}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{92117EEC-B99A-4BD5-A509-CFA6A9FA7706}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{92117EEC-B99A-4BD5-A509-CFA6A9FA7706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92117EEC-B99A-4BD5-A509-CFA6A9FA7706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A52F30-01E0-4C5E-AE06-BD10DAF4FA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A52F30-01E0-4C5E-AE06-BD10DAF4FA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A52F30-01E0-4C5E-AE06-BD10DAF4FA7A}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{A2A52F30-01E0-4C5E-AE06-BD10DAF4FA7A}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{A2A52F30-01E0-4C5E-AE06-BD10DAF4FA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A52F30-01E0-4C5E-AE06-BD10DAF4FA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E90FFD9-43FF-4EC8-9D25-3ED3332EFA22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E90FFD9-43FF-4EC8-9D25-3ED3332EFA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E90FFD9-43FF-4EC8-9D25-3ED3332EFA22}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{3E90FFD9-43FF-4EC8-9D25-3ED3332EFA22}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{3E90FFD9-43FF-4EC8-9D25-3ED3332EFA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E90FFD9-43FF-4EC8-9D25-3ED3332EFA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D50516B-804D-4FA2-A5D7-B0B054DD066E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D50516B-804D-4FA2-A5D7-B0B054DD066E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D50516B-804D-4FA2-A5D7-B0B054DD066E}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{7D50516B-804D-4FA2-A5D7-B0B054DD066E}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{7D50516B-804D-4FA2-A5D7-B0B054DD066E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D50516B-804D-4FA2-A5D7-B0B054DD066E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F566F4A4-22B2-47A2-A76A-F1F21CFF011F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F566F4A4-22B2-47A2-A76A-F1F21CFF011F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F566F4A4-22B2-47A2-A76A-F1F21CFF011F}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{F566F4A4-22B2-47A2-A76A-F1F21CFF011F}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{F566F4A4-22B2-47A2-A76A-F1F21CFF011F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F566F4A4-22B2-47A2-A76A-F1F21CFF011F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4708E3C8-FB4F-40A7-90E9-3A74EC321A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4708E3C8-FB4F-40A7-90E9-3A74EC321A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4708E3C8-FB4F-40A7-90E9-3A74EC321A52}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{4708E3C8-FB4F-40A7-90E9-3A74EC321A52}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{4708E3C8-FB4F-40A7-90E9-3A74EC321A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4708E3C8-FB4F-40A7-90E9-3A74EC321A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F1D7C8-3291-45A7-958F-85F1F0148EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F1D7C8-3291-45A7-958F-85F1F0148EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F1D7C8-3291-45A7-958F-85F1F0148EC9}.Distribution|Any CPU.ActiveCfg = Distribution|Any CPU
+		{37F1D7C8-3291-45A7-958F-85F1F0148EC9}.Distribution|Any CPU.Build.0 = Distribution|Any CPU
+		{37F1D7C8-3291-45A7-958F-85F1F0148EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F1D7C8-3291-45A7-958F-85F1F0148EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A144084A-93FA-4BC3-A9B0-6A8EA28E3BCA} = {62D47772-91D8-4B96-9B16-71F95CC5CC2F}
+		{AFF86B1A-EFF3-4E7C-B025-B8E5515CCA30} = {62D47772-91D8-4B96-9B16-71F95CC5CC2F}
+		{A3ABB351-A0AF-4B75-BCEF-22D45BB51447} = {62D47772-91D8-4B96-9B16-71F95CC5CC2F}
+		{64685A94-2105-44CC-99DA-9DCA626E13EB} = {62D47772-91D8-4B96-9B16-71F95CC5CC2F}
+		{2A35B2E5-3929-49D0-80A6-D3B38EF97AF4} = {6470D4C5-3432-41D9-88A2-D6D0F9E3CB5E}
+		{DFE69AF5-21A6-47FE-BDEA-C43200823475} = {6470D4C5-3432-41D9-88A2-D6D0F9E3CB5E}
+		{31B961A9-2CE0-4D3C-9900-998D1794324E} = {6470D4C5-3432-41D9-88A2-D6D0F9E3CB5E}
+		{CC8E9F25-2CB3-4310-B7E8-1ED7199794A5} = {6470D4C5-3432-41D9-88A2-D6D0F9E3CB5E}
+		{FC497B9E-429B-4F27-ADAD-D7EC425DE1BB} = {AFF86B1A-EFF3-4E7C-B025-B8E5515CCA30}
+		{E922AF9D-AC68-4822-925E-79941ED1AD1A} = {64685A94-2105-44CC-99DA-9DCA626E13EB}
+		{2109FD12-E92D-4E94-A170-6AFE3AAFE2EC} = {64685A94-2105-44CC-99DA-9DCA626E13EB}
+		{F8F9B0D9-23EA-48B1-A201-CBA71755BC69} = {A144084A-93FA-4BC3-A9B0-6A8EA28E3BCA}
+		{9DF5B683-8BA8-4A3F-91EA-758C3277BB75} = {A144084A-93FA-4BC3-A9B0-6A8EA28E3BCA}
+		{19B58C48-BD8C-43F1-890E-450914192322} = {A144084A-93FA-4BC3-A9B0-6A8EA28E3BCA}
+		{5A8D3805-9A56-4E24-A339-2FB3E371E53C} = {A3ABB351-A0AF-4B75-BCEF-22D45BB51447}
+		{5E867335-FC55-4D77-B91F-C3EFC722A8F6} = {A3ABB351-A0AF-4B75-BCEF-22D45BB51447}
+		{EE5AC7FC-1699-434D-9699-25A9E80944D1} = {A3ABB351-A0AF-4B75-BCEF-22D45BB51447}
+		{92117EEC-B99A-4BD5-A509-CFA6A9FA7706} = {84E2920F-B374-403C-999B-8DE19A53D5F4}
+		{A2A52F30-01E0-4C5E-AE06-BD10DAF4FA7A} = {84E2920F-B374-403C-999B-8DE19A53D5F4}
+		{3E90FFD9-43FF-4EC8-9D25-3ED3332EFA22} = {84E2920F-B374-403C-999B-8DE19A53D5F4}
+		{7D50516B-804D-4FA2-A5D7-B0B054DD066E} = {A144084A-93FA-4BC3-A9B0-6A8EA28E3BCA}
+		{F566F4A4-22B2-47A2-A76A-F1F21CFF011F} = {A144084A-93FA-4BC3-A9B0-6A8EA28E3BCA}
+		{BAC4D281-657C-4AC4-AD11-30AC5678716D} = {84E2920F-B374-403C-999B-8DE19A53D5F4}
+		{4708E3C8-FB4F-40A7-90E9-3A74EC321A52} = {84E2920F-B374-403C-999B-8DE19A53D5F4}
+		{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5} = {A3ABB351-A0AF-4B75-BCEF-22D45BB51447}
+		{37F1D7C8-3291-45A7-958F-85F1F0148EC9} = {A3ABB351-A0AF-4B75-BCEF-22D45BB51447}
+	EndGlobalSection
+EndGlobal

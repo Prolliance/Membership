@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FEEA1D8D-3A10-47CA-AC67-737DAEEB81F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prolliance.Membership.ServicePoint.Lib</RootNamespace>
+    <AssemblyName>Prolliance.Membership.ServicePoint.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Distribution|AnyCPU'">
+    <OutputPath>bin\Distribution\</OutputPath>
+    <DefineConstants>TRACE;DISTRIBUTION</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ProMembership.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxEngine">
+      <HintPath>..\Prolliance.Membership.Ref\AjaxEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Prolliance.License.Client">
+      <HintPath>..\Prolliance.Membership.Ref\Prolliance.License.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthManifests\AppManifest.cs" />
+    <Compile Include="AuthManifests\ControlPanelManifest.cs" />
+    <Compile Include="AuthManifests\ExtensionsManifest.cs" />
+    <Compile Include="AuthManifests\OrganizationManifest.cs" />
+    <Compile Include="AuthManifests\PositionManifest.cs" />
+    <Compile Include="AuthManifests\RoleManifest.cs" />
+    <Compile Include="AuthManifests\UserManifest.cs" />
+    <Compile Include="ControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Extends\UserExtends.cs" />
+    <Compile Include="FormHelper.cs" />
+    <Compile Include="IgnoreSessionState.cs" />
+    <Compile Include="InstallControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstallPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ServiceAuth.cs" />
+    <Compile Include="Services\ServiceAuthType.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prolliance.Membership.Business\Membership.Business.csproj">
+      <Project>{fc497b9e-429b-4f27-adad-d7ec425de1bb}</Project>
+      <Name>Membership.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.Common\Membership.Common.csproj">
+      <Project>{2109fd12-e92d-4e94-a170-6afe3aafe2ec}</Project>
+      <Name>Membership.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.DataTransfer\Membership.DataTransfer.csproj">
+      <Project>{5a8d3805-9a56-4e24-a339-2fb3e371e53c}</Project>
+      <Name>Membership.DataTransfer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.Install.Lib\Membership.Install.Lib.csproj">
+      <Project>{37f1d7c8-3291-45a7-958f-85f1f0148ec9}</Project>
+      <Name>Membership.Install.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prolliance.Membership.ServiceClients\Membership.ServiceClients.csproj">
+      <Project>{5e867335-fc55-4d77-b91f-c3efc722a8f6}</Project>
+      <Name>Membership.ServiceClients</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProMembership.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+﻿<div title="选择用户" id="__select_user">
+    <div data-role="grid" data-grid-rows="*" data-grid-cols="*,*" style="width: 100%; height: 100%">
+        <div data-role="cell">部门</div>
+        <ul data-role="cell">
+            <% var list=this; %>
+            <% for(var i in list){ var item = list[i]; %>
+            <li>
+                <label for="<%$(item.Name)%>">
+                    <input id="<%$(item.Name)%>" type="checkbox" />
+                    <%$(item.Name)%> 
+                </label>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

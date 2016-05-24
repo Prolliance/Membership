@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DEMO</title>
+    <script src="http://localhost:85/jsapi/lib/ems.js"
+        data-main="http://localhost:85/jsapi/api.js?ready">
+    </script>
+    <script>
+        var ready = function (api) {
+            api.init({
+                appKey: 'app-test1',
+                account: 'houfeng',
+                password: 'pass01!'
+            }, function () {
+                $('#open').click(function () {
+                    api.ui.selectUser({
+                        modal: true,
+                        filter: function (item) {
+                            return item.Name != 'user1';
+                        },
+                        onOk: function () {
+                            alert('ok');
+                        }
+                    });
+                });
+            });
+        };
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <input id="open" type="button" value="打开" />
+    </form>
+</body>
+</html>
